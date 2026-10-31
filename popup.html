@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 420px;
+      padding: 16px;
+      font-family: system-ui, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+    }
+    h2 { margin: 0 0 12px; color: #58a6ff; }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 4px;
+      font-size: 15px;
+      background: #21262d;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover { background: #30363d; }
+    #videos { margin-top: 16px; }
+    .video-item { margin: 12px 0; padding: 10px; background: #161b22; border-radius: 6px; }
+    .video-url { font-size: 0.85em; color: #8b949e; word-break: break-all; margin-top: 6px; }
+    #status { margin-top: 12px; color: #f85149; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h2>Video trovati</h2>
+  <button id="scan">Scansiona pagina</button>
+  <div id="videos"></div>
+  <div id="status"></div>
 
+  <script src="popup.js"></script>
+</body>
+</html>
